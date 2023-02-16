@@ -3,6 +3,7 @@
 
 适用于bing聊天的koishi
 
+后端搭建 [https://github.com/D-Jy-lab/koishi-bingchat-server](https://github.com/D-Jy-lab/koishi-bingchat-server)
 
 # Link
 
