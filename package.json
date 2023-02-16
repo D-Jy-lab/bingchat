@@ -1,6 +1,6 @@
 {
-  "name": "koishi-plugin-openchat",
-  "description": "chatGPT 问答插件",
+  "name": "koishi-plugin-bingchat",
+  "description": "EdgeGPT 问答插件",
   "version": "2.1.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -10,7 +10,8 @@
   ],
   "author": "42 <mirrorcy@vip.qq.com>",
   "contributors": [
-    "42 <mirrorcy@vip.qq.com>"
+    "42 <mirrorcy@vip.qq.com>",
+    "D-Jy <duan@d-jy.net>"
   ],
   "license": "MIT",
   "scripts": {
