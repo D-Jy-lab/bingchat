@@ -36,7 +36,7 @@ export function apply(ctx: Context, config: Config) {
   }
 
   const cmd = ctx.command(`${name} <提问内容:text>`)
-    .alias('ask')
+    .alias('bing')
     .action(async ({ session }, input) => {
       if (!input?.trim()) return session.execute(`help ${name}`)
       if (config.watingMsg) session.send(session.text('.wating'))
