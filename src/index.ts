@@ -1,11 +1,11 @@
 import { Context, h, Logger, Schema } from 'koishi'
 import { GetResponse } from './types'
 
-export const name = 'openchat'
+export const name = 'bingchat'
 
 const logger = new Logger(name)
 
-export const usage = "[自建后端转发服务](https://github.com/MirrorCY/openchat/blob/main/chat.py)，目前尚未存在手把手教程，有基本的 python 使用经验一般可以较为轻松的搭建。"
+export const usage = "[自建后端转发服务](https://github.com/D-Jy-lab/koishi-bingchat-server)，目前尚未存在手把手教程，有基本的 python 使用经验一般可以较为轻松的搭建。"
 
 export interface Config {
   watingMsg?: boolean,
@@ -14,7 +14,7 @@ export interface Config {
 
 export const Config: Schema<Config> = Schema.object({
   watingMsg: Schema.boolean().description('等待响应前是否提示。').default(false),
-  endPoint: Schema.string().description('服务器地址').default('http://127.0.0.1:8006/chat')
+  endPoint: Schema.string().description('服务器地址').default('http://127.0.0.1:8007/chat')
 })
 
 export function apply(ctx: Context, config: Config) {
