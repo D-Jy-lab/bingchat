@@ -1,11 +1,11 @@
 commands:
   openchat:
-    description: 使用 chatGPT 回答你的问题
+    description: 使用 EdgeGPT 回答你的问题
     usage: |-
-      例如 ask 用 typescript 加密一个文件
-      输入 ask 用 python 编写 hello world
-      输入 openchat 获取此帮助
-      违反 OpenAI 条款的行为将被封禁
+      例如 bing 用 typescript 加密一个文件
+      输入 bing 用 python 编写 hello world
+      输入 bingchat 获取此帮助
+      违反 Bing 条款的行为将被封禁
 
     messages:
       wating: 查询中，可能要一会...
