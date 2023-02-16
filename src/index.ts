@@ -8,11 +8,13 @@ const logger = new Logger(name)
 export const usage = "[自建后端转发服务](https://github.com/D-Jy-lab/koishi-bingchat-server)，目前尚未存在手把手教程，有基本的 python 使用经验一般可以较为轻松的搭建。"
 
 export interface Config {
+  alias: string[]
   watingMsg?: boolean,
   endPoint: string
 }
 
 export const Config: Schema<Config> = Schema.object({
+  alias: Schema.array(String).default(['bing', 'edgechat']).description('触发命令;别名'),
   watingMsg: Schema.boolean().description('等待响应前是否提示。').default(false),
   endPoint: Schema.string().description('服务器地址').default('http://127.0.0.1:8007/chat')
 })
@@ -36,7 +38,7 @@ export function apply(ctx: Context, config: Config) {
   }
 
   const cmd = ctx.command(`${name} <提问内容:text>`)
-    .alias('bing')
+    .alias(config.alias[0], config.alias[1], config.alias[2])
     .action(async ({ session }, input) => {
       if (!input?.trim()) return session.execute(`help ${name}`)
       if (config.watingMsg) session.send(session.text('.wating'))

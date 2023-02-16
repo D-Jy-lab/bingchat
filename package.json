@@ -1,14 +1,13 @@
 {
   "name": "koishi-plugin-bingchat",
-  "description": "EdgeGPT 问答插件",
-  "version": "2.1.0",
+  "description": "适用于bing聊天的koishi插件",
+  "version": "2.1.3",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
-  "author": "42 <mirrorcy@vip.qq.com>",
   "contributors": [
     "42 <mirrorcy@vip.qq.com>",
     "D-Jy <duan@d-jy.net>"
@@ -17,7 +16,7 @@
   "scripts": {
     "build": "tsc -b"
   },
-  "homepage": "https://forum.koishi.xyz/t/topic/59",
+  "homepage": "https://github.com/D-Jy-lab/bingchat",
   "keywords": [
     "chatbot",
     "koishi",
@@ -31,5 +30,12 @@
     "@types/node": "^18.11.18",
     "koishi": "^4.11.3",
     "typescript": "^4.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D-Jy-lab/bingchat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/D-Jy-lab/bingchat/issues"
   }
 }
