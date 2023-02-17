@@ -1,13 +1,14 @@
 {
   "name": "koishi-plugin-bingchat",
   "description": "适用于bing聊天的koishi插件",
-  "version": "2.1.3",
+  "version": "2.1.7",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "author": "D-Jy <duan@d-jy.net>",
   "contributors": [
     "42 <mirrorcy@vip.qq.com>",
     "D-Jy <duan@d-jy.net>"
@@ -27,14 +28,11 @@
     "koishi": "^4.11.0"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "koishi": "^4.11.3",
-    "typescript": "^4.9.4"
+    "@types/node": "^18.13.0",
+    "koishi": "^4.11.6",
+    "typescript": "^4.9.5"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/D-Jy-lab/bingchat.git"
-  },
+  "repository": "git+https://github.com/D-Jy-lab/bingchat.git",
   "bugs": {
     "url": "https://github.com/D-Jy-lab/bingchat/issues"
   }

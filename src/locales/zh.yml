@@ -1,5 +1,5 @@
 commands:
-  openchat:
+  bingchat:
     description: 使用 EdgeGPT 回答你的问题
     usage: |-
       例如 bing 用 typescript 加密一个文件
